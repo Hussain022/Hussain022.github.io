@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #abc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.container .main {
+    width: 80%;
+    max-width: 450px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #789;
+    box-shadow: 0 0 4px 1px hsl(0, 0%, 50%);
+    border: 3px solid #fff;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: #456;
+}
+
+.container .main .input-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container .main .input-div label {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container .main .input-div input, .container .main .input-div button {
+    width: 90%;
+    padding: 10px;
+    font-size: 26px;
+    border: 3px solid transparent;
+}
+
+.container .main .input-div button {
+    cursor: pointer;
+    background-color: seagreen;
+    color: #fff;
+}
+
+.container .main .input-div button:hover {
+    background-color: hsl(146, 57%, 60%);
+    border: 3px solid seagreen;
+}
+
+.container #output {
+    width: 80%;
+    max-width: 450px;
+    height: 60px;
+}
+
+.container #output p#invalidInput {
+    border: 3px solid red;
+    color: #bb0000;
+    background-color: #ffa1a1;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.container #output p#validInput {
+    color: #fff;
+    background-color: #789;
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;
+    box-shadow: 0 0 4px 1px hsl(0, 0%, 50%);
+    border: 3px solid #fff;
+}
